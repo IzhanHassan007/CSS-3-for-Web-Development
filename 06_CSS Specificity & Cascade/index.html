@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+<!-- 
+    Specificity Calculation
+    To calculate specificity, assign a value to each part of the selector:
+    
+    Universal Selector: 0
+    Element selectors and pseudo-elements: 1
+    Class selectors, attribute selectors, and pseudo-classes: 10
+    ID selectors: 100
+    Inline styles: 1000 -->
+
+    <style>
+        /* The specifity of this selector is 1 */
+        h1 {
+            color: rgb(16, 219, 36);
+        }
+
+        /* The specifity of this selector is 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* The specifity of this selector is 10 */
+        /* !important gets specificity 10,000 points */
+        .cblue {
+            color: blue;     
+        }
+
+        /* The specifity of this selector is 10 */
+        .cred {
+            color: rgb(255, 27, 27);
+        }
+
+        /* This is an example of attribute selector. The specifity of this selector is 10 */ 
+        [data-x=a] {
+            color: maroon;
+        }
+        /* The specifity of this selector is 1 + 10 + 10 + 10 + 10 = 41*/
+        s.harryclass.rohan-class[href]:hover{
+            color: rgb(120, 255, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cblue cred" data-x="a"> CSS Specificity </h1>
+    </div>
+</body>
+
+</html>

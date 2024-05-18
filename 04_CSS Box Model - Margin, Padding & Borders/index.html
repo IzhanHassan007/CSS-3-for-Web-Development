@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Margin, Padding & Borders</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .box
+    {
+    background-color: aqua;
+    }
+
+    .box1
+    {
+    color: rgba(255, 0, 0, 0.775);
+    padding: 10px;
+    margin: 25px; 
+    border: 2px solid blue;
+    height: 50px;
+    box-sizing: border-box;        /* for padding + border */
+    }
+
+    .box2
+        {
+        color: rgba(54, 14, 255, 0.775);
+        padding: 10px;
+        margin: 25px; 
+        border: 2px solid rgb(153, 255, 0);
+        height: 50px;
+        box-sizing: border-box;        /* for padding + border */
+        }
+    
+
+    </style>
+
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div><img src="1.PNG" alt="CSS" width="350" height="280"></div>
+    <div class="box box2">I am another box</div>
+    <div><img src="2.PNG" alt="Margin" width="350" height="280"></div>
+    
+</body>
+</html>

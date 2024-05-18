@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+
+        .img1{
+            filter: blur(10%) contrast(500%);
+        }
+        .img2{
+            filter: brightness(122%);
+            filter:opacity(0.4);
+        }
+        .img3{
+            /* filter: grayscale(100%); */
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://miro.medium.com/v2/resize:fit:1200/1*anBw80V0e0C8Ud2cg5vUmQ.jpeg" alt="">
+        <img class="img2" src="https://www.koimoi.com/wp-content/new-galleries/2024/05/shah-rukh-khan-shares-a-major-update-about-his-next-film-001.jpg" alt="">
+        <img class="img3" src="https://images.firstpost.com/wp-content/uploads/2017/04/Akshay-Kumar-Copy.jpg?im=FitAndFill=(596,336)" alt="">
+    </div>
+</body>
+</html>

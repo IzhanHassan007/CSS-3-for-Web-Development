@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .parent{
+            margin: 34px;
+            padding: 43px;
+            border: 2px solid purple;
+            /* Exeption: transform filter or perspective properties can also make an elemet appear as positioned */
+            /* position: relative; */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+            /* ye 5 chezen bh relative position krny k liye h */
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: sticky;   /*  chipak jany wali chez*/
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            top: 0px;
+            left: 3px;
+            position: fixed;
+        }
+
+        .box2 {
+            background-color: rgb(93, 185, 7);
+            position: relative;
+            bottom: 34px;
+            left: 56px;
+        }
+
+        .box3 {
+            background-color: rgb(82, 33, 154);
+            position: ;
+            bottom: 0PX;
+            left: 8px;
+        }
+
+        .box4 {
+            background-color: rgb(246, 142, 24);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

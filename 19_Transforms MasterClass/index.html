@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms MasterClass</title>
+    <style>
+
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            transform: rotate(0.125turn);
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: scaleX(2.6); */
+            /* transform: rotate3d(1.6); */
+            /* transform: skew(5); */
+            transform: translateY(100%) skewX(40deg) translateX(45%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .box:hover{
+            transform: translateX(200px) rotate(45deg) scale(2, 3);
+            transition: 1.1;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

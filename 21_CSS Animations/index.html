@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color:antiquewhite;
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            height: 45px;
+            width: 80px;
+            border-radius: 30%;
+            text-align: center;
+            /* animation-name: Izzu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0.3, 0.03, 0.96);
+            animation-delay: 1s;
+            animation-play-state: running;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Izzu 1.5s ease-in-out 2s infinite alternate-reverse backwards,
+                        Izzu2 1.5s ease-in-out 2s infinite alternate-reverse backwards;
+        }   
+
+        @keyframes Izzu {
+            from{
+                background-color: rgb(105, 221, 76);
+            }
+
+            to{
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes Izzu2 {
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

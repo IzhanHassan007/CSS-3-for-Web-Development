@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /* is sy hum pic overflow ko cntrl rakh skty hen */
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.792);
+            border: 2px solid rgb(255, 0, 0);
+        }
+
+        img {
+            float: left;
+        }
+
+        .card:nth-child(3){
+            background-color: rgb(105, 237, 237);
+            clear: both;       /* agr humen dono elements k sath kch bh nh chahiye */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- shortcut = .card>.card*3> -->
+    <div class="cards">
+        <img src="1.gif" alt="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur omnis magnam laudantium a
+                laboriosam corporis quaerat quidem, dolorem voluptatem alias deserunt, quis ut animi doloremque esse
+                ipsa! Distinctio fuga voluptate doloribus officia blanditiis.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit commodi, quae in nam dolore delectus! Ex adipisci necessitatibus, quisquam eveniet molestias ab dolorem, tempora magni, optio magnam provident fuga similique harum est quidem eligendi libero possimus laboriosam tenetur saepe quam odio. Perspiciatis facilis sapiente accusamus, ad voluptatum veniam consequatur. Alias minus necessitatibus laudantium, natus similique assumenda corrupti quia autem incidunt, voluptas nam perspiciatis in doloremque deserunt est quas magnam! Ea maiores nobis dolorum, doloribus aperiam dolore rem voluptas quis dolor perferendis minus dolorem incidunt ullam sequi quisquam deserunt temporibus ex ut quidem vel fugiat aliquam corporis dolores numquam? Nostrum ipsam eos, deserunt odio nihil deleniti sequi, vel cupiditate modi quia soluta beatae. A natus sed facere, ea perferendis consequuntur rerum suscipit ducimus dolorum exercitationem quo maxime corporis ullam ratione autem aspernatur itaque iusto repellendus facilis. Laudantium itaque soluta, qui perferendis saepe fugit ratione tempore consequatur, minima unde nam aperiam, quia placeat laboriosam aliquid! Aliquid, ratione natus, tenetur ad consequatur esse laborum, fugiat tempore rem dolore saepe quia commodi autem quis beatae sit odio officia? Natus eum voluptatibus, consequatur doloribus ab laboriosam. Eum dolorem ab quae perferendis esse, architecto ad, dignissimos quidem voluptatibus, hic accusamus rem eius libero? Fuga sit fugit recusandae, deleniti necessitatibus vero consequuntur corporis laborum esse atque tenetur possimus magnam voluptatum eaque itaque voluptates corrupti. Eos nemo quidem perspiciatis. Itaque sit commodi qui totam a. Deleniti ratione distinctio ex nulla excepturi beatae rem, quo quam nisi doloremque voluptas, est eligendi, deserunt suscipit. Fuga, nesciunt. In molestias maxime, sapiente iusto odit veniam dolores harum laboriosam quam, consectetur tenetur enim unde necessitatibus eligendi suscipit officia voluptates. Eveniet sed molestiae porro expedita nobis velit illum quisquam, fuga necessitatibus voluptatibus, dicta laborum nostrum harum voluptatum odio amet incidunt nihil placeat ducimus suscipit. Ea repellendus nulla est iste eligendi consectetur, vitae quas soluta similique et id, optio ut qui dicta atque amet eius obcaecati! Blanditiis consectetur, provident quo, tempore iste sint cum molestiae obcaecati sunt, nobis eveniet assumenda incidunt error eaque. Qui sapiente quo, placeat omnis at nulla impedit magnam accusamus maiores? Laudantium, suscipit? Perferendis, temporibus odio illo quaerat animi exercitationem sunt deserunt tempore tempora ipsam, facilis excepturi ducimus soluta atque? Temporibus possimus, omnis perspiciatis dicta minus consequuntur at ducimus dolores eum fuga explicabo. Doloremque, autem nisi? Itaque delectus facilis impedit nisi quo recusandae iusto eligendi ipsam perspiciatis enim. Atque velit ratione laudantium omnis aut quod fuga ipsa tempora dolores temporibus, ipsam, fugiat, quasi iusto. Odit tenetur excepturi laudantium porro enim ipsa sit earum ipsam? Dolorem molestiae sit, architecto veniam culpa quo quas ipsum! Rem saepe qui, corrupti amet voluptate illo placeat, odio, sit nam cupiditate perspiciatis quam minus! Fuga asperiores molestiae cum saepe nulla, quidem eum!</div>
+        <div class="card">Card 1</div>
+    </div>
+</body>
+
+</html>

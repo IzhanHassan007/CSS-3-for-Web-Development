@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            background-color: pink;
+            border: 3px solid rgb(196, 10, 143);
+            display: flex;
+            /*flex krny sy hum div ki position change krskty hen*/
+            height: 80vh;
+            /* align-items: center; */
+            /*  for center | if only 1 line then use krty hen*/
+            /* justify-content: center;    is sy hum line k center m krskty|multiple line*/
+            /* align-content: flex-start; */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            /*for direction and wrape both*/
+            gap: 40px 10px;
+            /*first row then column*/
+            /* column-gap: 30px;
+            row-gap: 10px; */
+            /* gap: 30px;  for gap */
+            /* flex-direction:column; */
+            /* flex-direction: column-reverse;     /*is sy hum column reverse krskty hen*/
+            /* flex-direction:row; */
+            /* flex-direction: row-reverse;        is sy hum column reverse krskty hen */
+        }
+
+        .item {
+            flex-grow: 1; /* agr hum flex grow kren to sb item aik barabar jaga lengy */
+            /* flex-shrink: 2; */
+            height: 62px;
+            width: 62px;
+            background-color: rgb(199, 159, 236);
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+
+        /* is sy hum order change krskty hen */
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .item-1 {
+            flex-grow: 3;
+            align-self: flex-end;   /*is sy hum start ya end m krskty hen*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1"></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <img src="Flex.PNG" alt="">
+        <!-- <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+         -->
+
+    </div>
+</body>
+
+</html>

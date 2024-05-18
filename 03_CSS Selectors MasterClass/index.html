@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector 
+        div 
+        {
+            background-color: rgb(254, 136, 18);
+        }*/
+
+        /* class selector */
+        .red 
+        {
+            background-color: rgba(4, 223, 157, 0.732);
+        }
+
+        /* id selector */
+        #green 
+        {
+            background-color: rgb(26, 218, 119);
+        }
+
+        /*child selector */
+        div>p 
+        {
+
+            color: rgba(89, 28, 0, 0.819);
+            background-color: rgb(98, 239, 236);
+        }
+
+        /*descendant selector */
+        div p 
+        {
+            color: rgba(0, 0, 0, 0.819);
+            background-color: rgb(168, 226, 7);
+        }
+
+
+        /*Universal selector */
+
+        * 
+        {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*Pseudo selector */
+        a:visited 
+        {
+            color: rgba(14, 14, 195, 0.841);
+        }
+
+        a:link 
+        {
+            color: rgb(6, 255, 6);
+        }
+
+        a:active 
+        {
+            background-color: rgb(183, 17, 225);
+        }
+
+        a:hover
+        {
+            background-color: rgb(255, 22, 5);
+        }
+        
+        p:first-child
+        {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="one">
+        <p> I am first </p>
+        <p> I am second </p>
+    </main>
+
+    <div class="red">
+        I am a div
+        <p> I am para inside div </p>
+    </div>
+
+
+    <div> I am second div </div>
+
+    <div id="green"> I am third div </div>
+
+    <div>
+
+        <a href="https://chat.openai.com/"> ChatGPT </a>
+        
+    </div>
+
+</body>
+
+</html>
